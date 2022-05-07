@@ -15,6 +15,7 @@ Umieść to repo wewnątrz folderu *home/GeneratedDatasets/* .
 
 Aby generator rozpoczął tworzenie obrazów stwórz folder w *GeneratedDatasets* i dodaj w tym folderze plik *request.txt*. Wewnątrz wpisz ilość obrazów do wygenerowania. Foldery oraz pliki request możes tworzyć bez wyłączania generatora :-) .
 
+```
 home
 |
 |-GeneratedDatasets
@@ -25,6 +26,7 @@ home
 |   |   |-request.txt
 |   |
 |   |-haler_yolov5 (to repo)
+```
 
 **WAŻNE**
 Jeżeli tworzysz datasety z obrazami to pamiętaj aby wpisać je do *data/haller.yaml* !!!
@@ -51,6 +53,7 @@ Wmieść wewnątrz catkin workspace paczkę detection_msgs pobraną z: https://g
 W tym samym folderze (czyli gdzie znajduje się plik detect.py) umieść plik z najlepszymi wgami *best.py*
 Konfigracja poprzez plik *yolov5_ros/launch/yolov5.launch*. Są w tam wypisane nazwy topiców i inne ważne dane.
 
+```
 catkin_ws
 |-detection_msgs
 |
@@ -61,6 +64,7 @@ catkin_ws
 |   |   |-haller_yolo (to repo)
 |   |   |-best.pt
 |   |   |-detect.py
+```
 
 **WAŻNE**
 Pamiętaj żeby po zgraniu wszytskich paczek użyj comedy ``` catkin_make ``` w folderze workspace!
