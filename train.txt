@@ -1,0 +1,1 @@
+python3 train.py --batch 8 --epochs 10 --data haller.yaml --weights yolov5s6.pt --freeze 12 --imgsz 1280 --project haller --name haller_net1
