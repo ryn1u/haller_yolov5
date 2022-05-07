@@ -44,13 +44,13 @@ Zmień ilość batchy, epochs oraz parametry --project i --name według uznania.
 Po zakonczeniu treningu plik z wagami znajduje się w: *haller_yollov5/(--project)/(--name)/weights/best.pt*
 
 ## ROS i YOLO
-
+Paczka *yolov5_ros* służy do połaczenia yolo z rosem. Potrzebuje ona wewnątrz siebie repo z yolov5 (czyli tego repo które oglądasz teraz).
 Wersję pod hallera paczki yolov5_ros dostępna w: https://github.com/ryn1u/yolov5_ros
 
-Umieść to repo w folderze *(nazwa twojego catkin workspace. pewnie HallerSim)/src/yolov5_ros/src/*
-Wmieść wewnątrz catkin workspace paczkę detection_msgs pobraną z: https://github.com/mats-robotics/detection_msgs
+Umieść repo haller_yolov5 w folderze *(nazwa twojego catkin workspace. pewnie HallerSim)/src/yolov5_ros/src/*
+Umieść wewnątrz catkin workspace paczkę detection_msgs pobraną z: https://github.com/mats-robotics/detection_msgs
 
-W tym samym folderze (czyli gdzie znajduje się plik detect.py) umieść plik z najlepszymi wgami *best.py*
+W tym folderze */yolov5_ros/src/* (czyli gdzie znajduje się plik detect.py) umieść plik z najlepszymi wagami *best.py*
 Konfigracja poprzez plik *yolov5_ros/launch/yolov5.launch*. Są w tam wypisane nazwy topiców i inne ważne dane.
 
 ```
